@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	 <meta charset="utf-8">
-    	 <title> C and C++ rock the world! </title>
+    	 <title> Welcome. </title>
 	<link rel="shortcut icon" href="https://informationtechnology2020.github.io/security.ico" />
 	<link rel="stylesheet" href="https://informationtechnology2020.github.io/bootstrap4.css">
 	<style>
@@ -72,38 +72,93 @@
 			let x = document.getElementById("txtPassword").value;
 			
 			
-                if (x === "Pasadena"){
-                    window.location.replace("https://ccpp2021.github.io/welcome.html");
+                if (x === "Ritchie"){
+                    window.location.replace("https://ccpp2021.github.io/aplus.html");
 				}
 				else {
-					alert("Wrong password.\nPlease type it again.\nYour IP address has been recorded.");
+					alert("Wrong answer.\nPlease try again.\nDo not give up so easily.");
 				}
                 
         }
       
       </script>
+	  <script>
+  
+		window.onload = function() {
+		  document.addEventListener("contextmenu", function(e){
+			e.preventDefault();
+		  }, false);
+		  document.addEventListener("keydown", function(e) {
+		  //document.onkeydown = function(e) {
+			// "I" key
+			if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+			  disabledEvent(e);
+			}
+			// "J" key
+			if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+			  disabledEvent(e);
+			}
+			// "S" key + macOS
+			if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+			  disabledEvent(e);
+			}
+			// "U" key
+			if (e.ctrlKey && e.keyCode == 85) {
+			  disabledEvent(e);
+			}
+			// "F12" key
+			if (event.keyCode == 123) {
+			  disabledEvent(e);
+			}
+		  }, false);
+		  function disabledEvent(e){
+			if (e.stopPropagation){
+			  e.stopPropagation();
+			} else if (window.event){
+			  window.event.cancelBubble = true;
+			}
+			e.preventDefault();
+			return false;
+		  }
+		};
+	  </script> 
 
 </head>
 <body onContextMenu="alert('Hi there. Don\'t even try it!');return false;">
 <br>
 <div class="container">
 
-	<div   style="text-align:center;font-size: 200%">
-        <span style="color: yellow;">
-            <strong>Remember to learn C and C++ at your earlier convenience. But, do it.</strong>   </span>
+	<div   style="text-align:center;font-size: 150%">
+        <span style="color: lightgreen;">
+			<br>
+            <strong>Information Systems (IS) and Information Technology (IT) .</strong> 
+		</span>
         <br>
+		<span style="color: lightskyblue;">
+			<strong><i>Information Technology is a subset of Information Systems.</i></strong>
+		
+		
+			<strong><i>Information Systems is an umbrella term for the systems, people and processes
+				 designed to create, store, manipulate, distribute and disseminate information. 
+				The field of Information Systems bridges business and computer science.</i></strong>
+		</span>
         <br>
+		<br>
+		<br>
+		<br>
+		<br>
 
-            <a href="#openModal" class="btn btn-warning btn-lg oval-pill">
-        <strong>C o n t i n u e </strong></a>
+            <a href="#openModal" class="btn btn-warning btn-lg rounded-pill">
+				<h3> <strong>&nbsp; &nbsp;K e e p &nbsp; &nbsp;R e a d i n g &nbsp; &nbsp;</strong></h3></a>        
+        
         
         </div>
 
 <div id="openModal" class="modalDialog">
 	<div>
 		<a href="#close" title="Close" class="close">X</a>
-		<h2>Type the new password:</h2>
-		<input type="password" id="txtPassword" class="form-control" placeholder="Ask your instructor">
+		<h2>Last name of the C programming language creator.</h2>
+		<input type="password" id="txtPassword" class="form-control" placeholder="Dennis ?">
         <br>
         <button type="submit" onclick="nextPage()" class="btn btn-warning btn-lg btn-block oval-pill">
         <strong>Continue</strong></button>
